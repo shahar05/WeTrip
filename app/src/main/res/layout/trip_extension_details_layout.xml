@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardUseCompatPadding="false"
+    app:cardElevation="8dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#eee"
+        >
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:src="@drawable/ic_landscape_gray_60dp"
+            android:id="@+id/image_attraction_trip_extension"
+            android:scaleType="fitXY"
+
+            />
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/ic_person_gray_72dp"
+            android:id="@+id/admin_image_trip_extension"
+            android:layout_marginTop="150dp"
+            android:layout_marginStart="10dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"
+            />
+
+        <TextView
+            android:id="@+id/profile_name_trip_extension"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_attraction_trip_extension"
+            android:layout_marginStart="10dp"
+            android:layout_toEndOf="@+id/admin_image_trip_extension"
+            android:text="dror kaufman"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/image_attraction_trip_extension"
+            android:layout_alignParentEnd="true"
+            android:layout_margin="10dp"
+            >
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/disable_btn"
+                android:text="@string/full"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:id="@+id/full_trip_extension"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/btn_round"
+                android:text="@string/Join"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:id="@+id/join_trip_extension"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_red_btn"
+                android:text="@string/leave"
+                android:textColor="#fff"
+                android:visibility="gone"
+                android:id="@+id/leave_trip_extension"
+                />
+            <Button
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="match_parent"
+                android:background="@drawable/round_red_btn"
+                android:text="@string/delete"
+                android:textColor="#fff"
+                android:id="@+id/delete_trip_extension"
+                />
+        </LinearLayout>
+
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="lets go to a wonderful trip"
+            android:textStyle="bold"
+            android:fontFamily="cursive"
+            android:textColor="#1B271C"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="-6"
+            android:shadowDy="-6"
+            android:shadowRadius="5"
+            android:textSize="30sp"
+            android:layout_below="@id/admin_image_trip_extension"
+            android:id="@+id/title_trip_extension"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5dp"
+            />
+
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:id="@+id/line_location"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/title_trip_extension"
+            android:layout_margin="5dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="3dp">
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/location"
+                        />
+
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+                        android:maxLength="15"
+                        android:gravity="center"
+
+                        android:id="@+id/name_attraction_trip_extension"
+                        android:hint="Attraction"
+                        />
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:src="@drawable/ic_directions_black_24dp"
+                        />
+                    <TextView
+
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:maxLines="1"
+                        android:inputType="text"
+                        android:textSize="16sp"
+                        android:maxLength="15"
+                        android:gravity="center"
+                        android:id="@+id/distance_trip_extension"
+                        android:hint="0Km"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:src="@drawable/ic_adjust_black_24dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:maxLength="15"
+                    android:id="@+id/meeting_location_trip_extension"
+                    android:hint="Meeting Point"
+
+                    />
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                >
+                <ImageView
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+
+                    android:src="@drawable/ic_group_black_24dp"
+                    />
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:maxLines="1"
+                    android:gravity="center"
+                    android:textSize="16sp"
+                    android:maxLength="15"
+
+                    android:id="@+id/num_of_participants_trip_extension"
+                    android:hint="town/street"
+                    />
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+            android:layout_margin="3dp"
+
+                >
+
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:src="@drawable/ic_access_time_white_24dp" />
+
+                    <TextView
+
+                        android:id="@+id/time_trip_extension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:hint="town/street"
+
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+
+                        />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    >
+                    <ImageView
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+
+                        android:src="@drawable/ic_date_range_black_24dp" />
+
+                    <TextView
+
+                        android:id="@+id/date_trip_extension"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+
+                        android:hint="town/street"
+                        android:gravity="center"
+                        android:maxLength="15"
+                        android:maxLines="1"
+                        android:textSize="16sp"
+
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:layout_below="@+id/line_location"
+            android:id="@+id/card_of_tv_trip_extension"
+            >
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                app:cardElevation="2dp"
+                app:cardCornerRadius="20dp"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:gravity="center"
+                        android:id="@+id/extra_details_trip_extension"
+                        android:textSize="17sp"
+                        android:layout_margin="10dp"
+                        android:text="as,djhasjkdh jkahsgd jhkasgd kjhagsjhkdgaskjh dgkasjhd gajhks dgajhksd gjkahsd gjhkas gdjhkasg jhdag"
+                        />
+
+                </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:layout_below="@+id/card_of_tv_trip_extension"
+            android:layout_margin="10dp"
+            >
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:padding="3dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp"
+
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile1_trip_extension"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                />
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:padding="3dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp"
+
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:id="@+id/profile2_trip_extension"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:padding="3dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp"
+
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:id="@+id/profile3_trip_extension"
+                        android:layout_width="match_parent"
+
+                        android:layout_height="match_parent" />
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+            <Space
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                />
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="center"
+                >
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="65dp"
+                    android:layout_height="65dp"
+                    android:padding="3dp"
+                    app:cardCornerRadius="30dp"
+                    app:cardElevation="1dp"
+
+                    >
+
+                    <de.hdodenhof.circleimageview.CircleImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:id="@+id/profile4_trip_extension"/>
+
+                </androidx.cardview.widget.CardView>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+
+
+
+    <!--        <LinearLayout-->
+    <!--            android:layout_width="wrap_content"-->
+    <!--            android:layout_height="wrap_content"-->
+    <!--            android:layout_below="@+id/line_location"-->
+    <!--            android:layout_marginTop="10dp"-->
+    <!--            android:id="@+id/line_information"-->
+    <!--            >-->
+    <!--            <ImageView-->
+    <!--                android:layout_width="25dp"-->
+    <!--                android:layout_height="25dp"-->
+    <!--                android:src="@drawable/ic_info_outline_black_24dp"-->
+    <!--                android:layout_marginStart="10dp" />-->
+
+    <!--            <TextView-->
+
+    <!--                android:layout_width="150dp"-->
+    <!--                android:layout_height="wrap_content"-->
+    <!--                android:layout_marginStart="5dp"-->
+    <!--                android:maxLines="1"-->
+    <!--                android:inputType="text"-->
+    <!--                android:textSize="16sp"-->
+    <!--                android:maxLength="15"-->
+    <!--                android:id="@+id/post_information"-->
+    <!--                android:hint="town/street"-->
+
+    <!--                />-->
+
+    <!--        </LinearLayout>-->
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!--<RelativeLayout-->
+<!--android:layout_width="match_parent"-->
+<!--android:layout_height="match_parent">-->
+
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="80dp"-->
+<!--    android:src="@mipmap/ic_launcher_round"-->
+<!--    android:id="@+id/admin_image_trip_extension"-->
+<!--    />-->
+
+
+<!--<TextView-->
+<!--    android:id="@+id/profile_name"-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:layout_toEndOf="@+id/admin_image_trip_extension"-->
+<!--    android:text="julia gati"-->
+<!--    android:textSize="20dp"-->
+<!--    android:textStyle="bold"-->
+<!--    android:layout_marginStart="10dp"-->
+<!--    android:layout_marginTop="25dp"-->
+
+
+<!--    />-->
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="lets go to awonderfull trip"-->
+<!--    android:textSize="25dp"-->
+<!--    android:textStyle="bold"-->
+<!--    android:layout_below="@id/admin_image_trip_extension"-->
+<!--    android:id="@+id/title"-->
+<!--    />-->
+
+<!--<TextView-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="taj mahahl"-->
+<!--    android:textSize="25dp"-->
+<!--    android:textStyle="bold"-->
+<!--    android:layout_below="@id/title"-->
+<!--    android:id="@+id/name_attraction"-->
+
+<!--    />-->
+
+
+<!--<ScrollView-->
+<!--    android:layout_width="match_parent"-->
+<!--    android:layout_height="250dp"-->
+<!--    android:layout_below="@+id/name_attraction"-->
+<!--    android:id="@+id/scrollview1"-->
+<!--    >-->
+
+<!--    <RelativeLayout-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content">-->
+
+
+<!--        <ImageView-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="200dp"-->
+<!--            android:src="@mipmap/ic_launcher_round"-->
+<!--            android:id="@+id/image_attraction_trip_extension"-->
+<!--            android:layout_margin="10dp"-->
+<!--            />-->
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/image_attraction_trip_extension"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/line_time"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:src="@drawable/ic_access_time_black_24dp"-->
+<!--                android:layout_marginStart="10dp" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="meeting time: "-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
+
+<!--            <EditText-->
+
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:maxLines="1"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="16sp"-->
+<!--                android:maxLength="15"-->
+<!--                android:id="@+id/post"-->
+<!--                android:hint="town/street"-->
+
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+
+
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/line_time"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/line_location"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:src="@drawable/location"-->
+<!--                android:layout_marginStart="10dp" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="Location: "-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
+
+<!--            <EditText-->
+
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:maxLines="1"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="16sp"-->
+<!--                android:maxLength="15"-->
+<!--                android:id="@+id/post_location"-->
+<!--                android:hint="town/street"-->
+
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+
+
+<!--        <LinearLayout-->
+<!--            android:layout_width="wrap_content"-->
+<!--            android:layout_height="wrap_content"-->
+<!--            android:layout_below="@+id/line_location"-->
+<!--            android:layout_marginTop="10dp"-->
+<!--            android:id="@+id/line_information"-->
+<!--            >-->
+<!--            <ImageView-->
+<!--                android:layout_width="25dp"-->
+<!--                android:layout_height="25dp"-->
+<!--                android:src="@drawable/ic_info_outline_black_24dp"-->
+<!--                android:layout_marginStart="10dp" />-->
+
+
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="information: "-->
+<!--                android:textSize="16sp"-->
+<!--                android:textStyle="bold"-->
+<!--                android:layout_marginStart="10dp"-->
+<!--                />-->
+
+<!--            <EditText-->
+
+<!--                android:layout_width="150dp"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:layout_marginStart="5dp"-->
+<!--                android:maxLines="1"-->
+<!--                android:inputType="text"-->
+<!--                android:textSize="16sp"-->
+<!--                android:maxLength="15"-->
+<!--                android:id="@+id/post_information"-->
+<!--                android:hint="town/street"-->
+
+<!--                />-->
+
+
+<!--        </LinearLayout>-->
+
+<!--    </RelativeLayout>-->
+
+<!--</ScrollView>-->
+
+
+
+
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--    android:layout_width="45dp"-->
+<!--    android:layout_height="45dp"-->
+<!--    android:src="@mipmap/ic_launcher_round"-->
+<!--    android:id="@+id/profile1"-->
+<!--    android:layout_below="@+id/scrollview1"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    />-->
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--    android:layout_width="45dp"-->
+<!--    android:layout_height="45dp"-->
+<!--    android:src="@mipmap/ic_launcher_round"-->
+<!--    android:id="@+id/profile2"-->
+<!--    android:layout_below="@+id/scrollview1"-->
+<!--    android:layout_toEndOf="@id/profile1"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    />-->
+
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--    android:layout_width="45dp"-->
+<!--    android:layout_height="45dp"-->
+<!--    android:src="@mipmap/ic_launcher_round"-->
+<!--    android:id="@+id/profile3"-->
+<!--    android:layout_below="@+id/scrollview1"-->
+<!--    android:layout_toEndOf="@id/profile2"-->
+<!--    android:layout_marginEnd="5dp"-->
+<!--    />-->
+<!--<de.hdodenhof.circleimageview.CircleImageView-->
+<!--    android:layout_width="45dp"-->
+<!--    android:layout_height="45dp"-->
+<!--    android:src="@mipmap/ic_launcher_round"-->
+<!--    android:id="@+id/profile4"-->
+<!--    android:layout_below="@+id/scrollview1"-->
+<!--    android:layout_toEndOf="@id/profile3"-->
+
+<!--    />-->
+
+<!--<ImageView-->
+<!--    android:layout_width="50dp"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:src="@drawable/ic_more_horiz_black_24dp"-->
+<!--    android:layout_below="@+id/scrollview1"-->
+<!--    android:layout_toEndOf="@id/profile4"-->
+<!--    android:layout_marginTop="20dp"-->
+<!--    android:id="@+id/dots"-->
+
+<!--    />-->
+
+
+<!--<Button-->
+<!--    android:layout_width="wrap_content"-->
+<!--    android:layout_height="wrap_content"-->
+<!--    android:text="join!"-->
+<!--    android:layout_below="@+id/scrollview1"-->
+<!--    android:layout_toEndOf="@id/dots"-->
+<!--    android:layout_marginStart="20dp"-->
+
+<!--    />-->
+
+<!--</RelativeLayout>-->

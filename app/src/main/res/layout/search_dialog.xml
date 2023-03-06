@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardElevation="8dp"
+    android:orientation="vertical"
+    app:cardCornerRadius="20dp"
+
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/colorLight"
+        android:padding="10dp"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/search_by_distance"
+            android:gravity="center"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:textColor="#1B271C"
+            android:shadowColor="@color/text_shadow"
+            android:shadowDx="-6"
+            android:shadowDy="-6"
+            android:shadowRadius="5"
+            />
+
+        <SeekBar
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/search_dialog_seek_bar"
+            android:layout_margin="5dp"
+            />
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="5"
+                android:orientation="vertical"
+                >
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp">
+
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="6"
+                        android:textSize="20sp"
+                        android:gravity="center"
+                        android:text="@string/distance"
+                        android:textStyle="bold"
+                        android:textColor="#1B271C"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="-6"
+                        android:shadowDy="-6"
+                        android:shadowRadius="5"
+                        />
+                    <TextView
+                        android:layout_width="0dp"
+                        android:layout_height="match_parent"
+                        android:layout_weight="3"
+                        android:gravity="center"
+                        android:textSize="25sp"
+                        android:text="@string/zero_km"
+                        android:id="@+id/distance_is_search_dialog"
+                        android:textStyle="bold"
+                        android:textColor="#1B271C"
+                        android:shadowColor="@color/text_shadow"
+                        android:shadowDx="-6"
+                        android:shadowDy="-6"
+                        android:shadowRadius="5"
+                        />
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <Button
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:text="@string/search"
+                        android:textColor="#fff"
+                        android:id="@+id/search_dialog_search_btn"
+                        android:background="@drawable/btn_round_light"
+                        />
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/colorLight"
+                android:gravity="center">
+                <ImageButton
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:background="@color/colorLight"
+                    android:textSize="20sp"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/world"
+                    android:id="@+id/logo_search"
+                    />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>
+

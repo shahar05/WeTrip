@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/item_feed"
+            android:checked="true"
+            android:icon="@drawable/world2"
+            android:title="@string/feed">
+
+        </item>
+        <item
+            android:id="@+id/item_login"
+            android:checked="false"
+            android:icon="@drawable/world2"
+            android:title="@string/login">
+
+        </item>
+        <item
+            android:id="@+id/item_register"
+            android:checked="false"
+            android:icon="@drawable/world2"
+            android:title="@string/register">
+
+        </item>
+        <item
+            android:id="@+id/item_logout"
+            android:checked="false"
+            android:icon="@drawable/world2"
+            android:title="@string/logout"
+            android:visible="false">
+
+        </item>
+        <item
+            android:id="@+id/item_my_trips"
+            android:checked="false"
+            android:icon="@drawable/world2"
+            android:title="@string/my_trips"
+            android:visible="false">
+
+        </item>
+        <item
+            android:id="@+id/item_profile"
+            android:checked="false"
+            android:icon="@drawable/world2"
+            android:title="@string/my_profile"
+            android:visible="false">
+
+        </item>
+        <item
+            android:id="@+id/item_friend"
+            android:checked="false"
+            android:icon="@drawable/world2"
+            android:title="@string/my_friends"
+            android:visible="false">
+
+        </item>
+    </group>
+</menu>
