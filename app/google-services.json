@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "520003026430",
+    "firebase_url": "https://wetrip-id.firebaseio.com",
+    "project_id": "wetrip-id",
+    "storage_bucket": "wetrip-id.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:520003026430:android:f83fed8e8bfd4c30b154af",
+        "android_client_info": {
+          "package_name": "com.shahardror.wetrip"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "520003026430-ne4fdmvacms33pi4jg82lk1va3rp9br3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.shahardror.wetrip",
+            "certificate_hash": "753bc3279f811254f3c40b778dd5818fdcea46f5"
+          }
+        },
+        {
+          "client_id": "520003026430-r8n7fau8ik8npvecdqclh7agprptniqv.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCOB1T6al-uk9lYPFLTg9M2J8eGUTXGfQ8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "520003026430-r8n7fau8ik8npvecdqclh7agprptniqv.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
